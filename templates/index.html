@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1>AI Chatbot</h1>
+          <span>Gemini powered</span>
+        </div>
+      </div>
+
+      <button id="newChat" class="new-chat">＋ New Chat</button>
+
+      <div class="sidebar-info">
+        <p><strong>About this project</strong></p>
+        <p>A Flask + Gemini chatbot with SQLite conversation history.</p>
+      </div>
+
+      <button id="clearChat" class="clear-btn">Clear conversation</button>
+    </aside>
+
+    <main class="chat-area">
+      <header class="topbar">
+        <div>
+          <h2>AI Assistant</h2>
+          <p><span class="status-dot"></span> Online</p>
+        </div>
+      </header>
+
+      <section id="messages" class="messages">
+        <div id="welcome" class="welcome">
+          <div class="welcome-icon">✦</div>
+          <h2>How can I help you?</h2>
+          <p>Ask me anything about programming, studies, projects, or general topics.</p>
+          <div class="suggestions">
+            <button>Explain Python in simple words</button>
+            <button>Give me a C programming example</button>
+            <button>Help me build an MCA project</button>
+          </div>
+        </div>
+      </section>
+
+      <form id="chatForm" class="composer">
+        <textarea id="messageInput" rows="1" maxlength="4000"
+          placeholder="Message AI Chatbot..." autocomplete="off"></textarea>
+        <button id="sendButton" type="submit" aria-label="Send message">➤</button>
+      </form>
+      <p class="disclaimer">AI can make mistakes. Verify important information.</p>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
