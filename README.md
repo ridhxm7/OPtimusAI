@@ -10,7 +10,7 @@ A complete college/MCA-level AI chatbot web application using Flask, SQLite, HTM
 - Loading indicator
 - Enter-to-send and Shift+Enter for a new line
 - Responsive layout
-- API key stored in `.env`
+- API key loaded from environment variables
 - Basic error handling
 
 ## Requirements

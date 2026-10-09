@@ -1,5 +1,18 @@
+# API keys and environment variables
 .env
+.env.*
+!.env.example
+
+# Python virtual environment
 venv/
+.venv/
+
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Local database and conversation history
 chatbot.db
+
+# Local editor settings
+.vscode/
