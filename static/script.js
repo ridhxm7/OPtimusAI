@@ -1,3 +1,4 @@
+// Get the HTML elements that the JavaScript will control
 const messagesEl = document.getElementById("messages");
 const form = document.getElementById("chatForm");
 const input = document.getElementById("messageInput");
